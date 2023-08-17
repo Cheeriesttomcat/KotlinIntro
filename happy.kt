@@ -1,18 +1,14 @@
 fun main() {
-    val age = 5*365
-    val name = "Rover"
-    println("Happy Birthday, ${name}!")
-    println("You are already ${age} days old ${name}!")
-    println("   ,,,,,   ")
+    val border = "`-._,-'"
+    val timesToRepeat = 4
+    printBorder(border,timesToRepeat)
+    println("  Happy Birthday, Jhansi!")
+    printBorder(border,timesToRepeat)
+}
 
-    // Let's print a cake!
-    println("   |||||   ")
-    println(" =========")
-    println("@@@@@@@@@@@")
-    println("{~@~@~@~@~}")
-    println("@@@@@@@@@@@")
-
-    //This is empty
-    println("")
-    println("${age} days old is the very best age to celebrate!")
+fun printBorder(border: String, times: Int) {
+    repeat(times) {
+        print(border)
+    }
+    println()
 }
