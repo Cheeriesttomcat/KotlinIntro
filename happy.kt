@@ -1,6 +1,8 @@
 fun main() {
-    println("Happy Birthday, Rover!")
-    println("You are already 5!")
+    val age = 5*365
+    val name = "Rover"
+    println("Happy Birthday, ${name}!")
+    println("You are already ${age} days old ${name}!")
     println("   ,,,,,   ")
 
     // Let's print a cake!
@@ -12,5 +14,5 @@ fun main() {
 
     //This is empty
     println("")
-    println("5 is the very best age to celebrate!")
+    println("${age} days old is the very best age to celebrate!")
 }
